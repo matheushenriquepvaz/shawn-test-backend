@@ -14,7 +14,8 @@ router.get('/users', async function (req, res) {
             }
         });
         res.status(200).send(axiosResp.data);
-    } catch {
+    } catch (error){
+        console.log(error.toJSON());
         res.status(400).send({"message": "Error fetching data"});
     }
 });
@@ -29,7 +30,8 @@ router.get('/users/:username/details', async (req, res) => {
             const axiosResp = await axios.get(`https://api.github.com/users/${username}`);
             res.status(200).send(axiosResp.data);
         }
-    } catch {
+    } catch (error) {
+        console.log(error.toJSON());
         res.status(400).send({"message": "Error fetching data"});
     }
 });
@@ -44,7 +46,8 @@ router.get('/users/:username/repos', async (req, res) => {
             const axiosResp = await axios.get(`https://api.github.com/users/${username}/repos`);
             res.status(200).send(axiosResp.data);
         }
-    } catch {
+    } catch (error) {
+        console.log(error.toJSON());
         res.status(400).send({"message": "Error fetching data"});
     }
 });
