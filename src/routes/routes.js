@@ -49,13 +49,5 @@ router.get('/users/:username/repos', async (req, res) => {
     }
 });
 
-/*
-router.post('/', function (req, res) {
-    const body = req.body;
-    console.log('Recebi esse body: ' + JSON.stringify(body));
-    res.send({"content" : "hello world"});
-});
-*/
-
 
 module.exports = router;
