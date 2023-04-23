@@ -15,10 +15,9 @@ app.use('/api', routes);
 
 var server = app.listen(process.env.PORT || 8081, function() {
         console.log(' \nListening on port ' + server.address().port);
-        console.log('Servidor iniciado.');
-        if(server.address().port === 8081) {
-            console.log('\nURL da aplicação local: http://localhost:' + server.address().port);
-        }
+        console.log('Servidor iniciado.');        
+        console.log('\nURL da aplicação local: http://localhost:' + server.address().port);
+        
     }
 )
 
