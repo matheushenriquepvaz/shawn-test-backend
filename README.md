@@ -24,7 +24,9 @@ run those commands on the root directory
   npm run dev
 ```
     
-and you will see in the console the URL to access the app just like bellow
+and you will see in the console the URL to access the app just like bellow:
+
+![app-url-link-port](https://user-images.githubusercontent.com/49080260/233885646-9ce4ddd5-29f5-4c1a-b127-2deb6d1d5448.PNG)
 
 ## Main Page
 
